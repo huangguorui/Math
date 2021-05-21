@@ -1,6 +1,5 @@
 package Stack.p3_2_22;
 
-
 public class Array<E> {
     //私有变量，不允许用户从外部来进行获取
     private E[] data;
