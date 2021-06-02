@@ -17,7 +17,7 @@ public class MergeSort {
         //可能产生bug的问题，整型溢出,数组越界
         //int mid = (l + r) / 2;
         //解决方法
-        int mid = l + (l - r) / 2;
+        int mid = l + (r -l) / 2;
 
         sort(arr, l, mid);
         sort(arr, mid + 1, r);
@@ -54,7 +54,7 @@ public class MergeSort {
     }
 
     public static void main(String[] args) {
-        int n = 10000;
+        int n = 100000;
         Integer[] arr = ArrayGenerator.generateRandomArray(n, n);
         SortingHelper.sortTest("MergeSort", arr);
 
